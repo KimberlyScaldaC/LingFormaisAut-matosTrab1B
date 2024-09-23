@@ -1,0 +1,9 @@
+0          aceita
+1          aceita
+0011       aceita
+010        aceita
+0100000    aceita
+0110000    aceita
+01110000   aceita
+00000110000 aceita
+100000     aceita

@@ -1,0 +1,146 @@
+----------------------------------
+a = 1  | b = 0
+entrada ->
+q0 q1
+q0
+q1
+q0 1 q0
+q0 h q1
+q1 0 q1
+
+saida->
+q01 q1
+q01
+q01 q1
+q01 0 q1
+q01 1 q01
+q1 0 q1
+
+entrada Palavras -> 
+1110000
+1000  
+1111
+00001
+1
+0
+saida Palavras ->
+1110000 aceita
+1000 aceita
+1111 aceita
+00001 nao aceita
+1 aceita
+0 aceita
+
+----------------------------------
+a = 1  | b = 0
+
+entrada -> 
+q0 q1 q2 q3 q4 q5 q6
+q0
+q6
+q0 h q1
+q0 1 q1
+q1 0 q1
+q1 0 q2
+q1 h q3
+q2 1 q6
+q3 1 q3
+q3 0 q0
+q3 h q4
+q4 0 q5
+q5 h q6
+
+saida -> 
+q0123456 q0134 q013456 q134 q1346 q34
+q0134
+q0123456 q013456 q1346
+q0134 0 q0123456
+q0134 1 q134
+q0123456 0 q0123456
+q0123456 1 q1346
+q134 0 q0123456
+q134 1 q34
+q1346 0 q0123456
+q1346 1 q34
+q34 0 q013456
+q34 1 q34
+q013456 0 q0123456
+q013456 1 q134
+
+entrada Palavras -> 
+0
+10
+1000
+110
+11001
+1
+0000000000
+0101
+111111111
+011111101
+0101010011
+
+saida Palavras ->
+
+0 aceita
+10 aceita
+1000 aceita
+110 aceita
+11001 aceita
+1 nao aceita
+0000000000 aceita
+0101 aceita
+111111111 nao aceita
+011111101 nao aceita
+
+----------------------------------
+a = 1  | b = 0
+
+entrada ->
+q0 q1 q2 q3 q4 q5
+q0
+q5
+q0 h q1
+q0 h q3
+q1 0 q1
+q1 1 q2
+q2 1 q1
+q2 0 q2
+q2 h q3
+q3 0 q3
+q3 1 q3
+q3 h q4
+q4 h q5
+
+saida->
+q01345 q1345 q2345
+q01345
+q01345 q1345 q2345
+q01345 0 q1345
+q01345 1 q2345
+q1345 0 q1345
+q1345 1 q2345
+q2345 0 q2345
+q2345 1 q1345
+
+entrada Palavras -> 
+0
+1
+0011
+010
+0100000
+0110000
+01110000
+00000110000
+100000
+
+saida Palavras ->
+0          aceita
+1          aceita
+0011       aceita
+010        aceita
+0100000    aceita
+0110000    aceita
+01110000   aceita
+00000110000 aceita
+100000     aceita
